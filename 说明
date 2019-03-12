@@ -1,0 +1,20 @@
+2017年5月22日11:33:12
+cacheColorHint　：　listview的缓冲背景颜色
+
+2017年5月24日15:05:23
+indeterminateDrawable ： progressBar的属性；
+android:indeterminateDrawable="@drawable/custom_progressbar"
+
+2017年5月26日11:00:03
+pic_list_item_bg.9.png, 这张图有问题啊，放到drawable-hdpi里面，然后list_item_photos里面作为背景使用，运行程序提示报错，
+不使用还是运行不起来，直接删除掉在运行没问题；
+
+2017年5月29日11:21:33
+不管Android设备内存多少，都只给每个app分配 16M(大部分，也有其他大小) 内存，一旦超出就内存溢出；
+
+Java高级：
+默认强引用：GC不会回收；
+软引用：考虑回收 SoftReference
+弱引用：更会回收 WeakReference
+虚引用：优先回收 PhantomReference
+2.3以后GC更倾向于软引用 和 弱引用的回收；所以告别软引用和弱引用，需要用到LruCache.

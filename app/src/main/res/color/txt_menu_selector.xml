@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--通过enable来让listview的item点击发生变化，可用不可用-->
+    <item android:state_enabled="true" android:color="@color/red" />
+    <item android:color="@color/white" />
+</selector>
